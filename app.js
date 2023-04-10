@@ -25,7 +25,7 @@ const dbUrl = process.env.DB_URL || 'mongodb://127.0.0.1:27017/yelp-camp';
 // 'mongodb://127.0.0.1:27017/yelp-camp'
 
 mongoose.set('strictQuery', false);
-mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp', { useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection
 db.on("error", console.error.bind(console, "connection error:"))
@@ -33,22 +33,22 @@ db.once("open", () => {
     console.log("Database Connected!");
 });
 
-const secret = process.env.SECRET || "thisisasecretstring";
+// const secret = process.env.SECRET || "thisisasecretstring";
 
-const store = MongoStore.create({
-    mongoUrl: dbUrl,
-    secret,
-    touchAfter: 24*60*60
-});
+// const store = MongoStore.create({
+//     mongoUrl: dbUrl,
+//     secret,
+//     touchAfter: 24*60*60
+// });
 
-store.on("error", function(e){
-    console.log("Session Store Error!", e);
-})
+// store.on("error", function(e){
+//     console.log("Session Store Error!", e);
+// })
 
 const sessionConfig = {
-    store,
+    // store,
     name: 'session',     //for the security purpose
-    secret,
+    secret: "thisisasecretstring",
     resave: false,
     saveUninitialized: true,
     cookie:{
