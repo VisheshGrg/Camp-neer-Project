@@ -1,6 +1,6 @@
 # Yelp-Camp-Project
 
-A full stack website(yelp-styled webiste for campsites) where users can view campgrounds, give reviews, edit his/her review and even make campgrounds. In order to do this, the user must have an account.
+A full-stack website similar to Yelp for campsites where users can view campgrounds, leave reviews, edit their reviews, and even add new campgrounds. To access these features, users must create an account.
 
 ## Tech Stack used: 
 
@@ -8,15 +8,15 @@ A full stack website(yelp-styled webiste for campsites) where users can view cam
 
 ## Functionality:
 
-> The user lands on the home page where links are provided for login, signup and to view all campgrounds.
+> When the user lands on the homepage, they will see links for logging in, signing up, and viewing all campgrounds.
 
-> The user can view all campgrounds even without logging or signing up.
+> Users can view all campgrounds even without logging in or signing up.
 
-> Everyone need to sign up or log in, in order to edit his/her campground or reviews, or make a new campground.
+> Everyone needs to sign up or log in to edit their campgrounds or reviews, or create a new campground.
 
-> User can only edit his/her campground or reviews.
+> Users can only edit their own campgrounds or reviews.
 
-> The website is implemented using AWS cloud.
+> The website is implemented using AWS cloud services.
 
 ## Screenshots: 
 
@@ -24,13 +24,13 @@ A full stack website(yelp-styled webiste for campsites) where users can view cam
 ![home page](https://github.com/VisheshGrg/Yelp-Camp-Project/blob/main/Screenshot%20from%202023-04-11%2017-51-01.png)
 
 > Login page
-![Login page]()
+![Login page](https://github.com/VisheshGrg/Yelp-Camp-Project/blob/main/Screenshot%20from%202023-04-11%2018-04-57.png)
 
-> Sign up page
-![Sign up page]()
+> Sign Up page
+![Sign up page](https://github.com/VisheshGrg/Yelp-Camp-Project/blob/main/Screenshot%20from%202023-04-11%2018-05-04.png)
 
 > All campgrounds page 
-![all campground page]()
+![all campground page](https://github.com/VisheshGrg/Yelp-Camp-Project/blob/main/Screenshot%20from%202023-04-11%2018-04-36.png)
 
-> Show page for a campground
-![show page]()
+> Show page for a Campground
+![show page](https://github.com/VisheshGrg/Yelp-Camp-Project/blob/main/Screenshot%20from%202023-04-11%2018-05-40.png)
