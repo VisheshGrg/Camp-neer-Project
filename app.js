@@ -68,7 +68,7 @@ app.use(
     mongoSanitize({
       replaceWith: '_',
     }),
-);
+)
 
 app.use(session(sessionConfig));
 app.use(flash());
