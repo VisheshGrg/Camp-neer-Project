@@ -52,3 +52,23 @@ module.exports.validateReview = (req,res,next) => {
         next();
     }
 }
+
+module.exports.isCampground = async (req,res,next)=>{
+    const {id}=req.params;
+    const campground = await Campground.findById(id);
+    if(!campground){
+        req.flash('error', "Campground not found!");
+        return res.redirect('/campgrounds');
+    }
+    next();
+}
+
+module.exports.isReview = async (req,res,next)=>{
+    const {reviewId}=req.params;
+    const review = await Review.findById(reviewId);
+    if(!review){
+        req.flash('error', "Review not found!");
+        return res.redirect('/campgrounds');
+    }
+    next();
+}
